@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>*** C o l d p l a y ***</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="./tailwind3.js"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <style>
+    .move-right {
+      transform: translateX(300px); /* Mueve 300px hacia la derecha */
+      transition: transform 0.5s ease; /* Animación suave */
+    }
+  </style>
+  <script>Openbar()</script>
+
+</head>
+
+<body class="bg-cover  font-[Poppins] flex justify-between flex-wrap	" style="background-image: url('premium_photo.jpeg'); height: 400px">
+  
+      <div class="menu absolute">
+        <span class="text-white text-4xl top-5 left-4 cursor-pointer" onclick="Openbar()">
+          <i class="bi bi-filter-left px-2 bg-blue-600 rounded-md"></i>
+        </span>
+        <!-- <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] duration-1000
+          p-2 w-[300px] overflow-y-auto text-center bg-gray-900 shadow h-screen"> -->
+        <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] duration-1000
+          p-2 w-[300px] overflow-y-auto text-center bg-gradient-to-r from-cyan-500 to-blue-500 shadow h-screen">  
+          <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex items-center rounded-md ">
+              <i class="bi bi-app-indicator px-2 py-1 bg-blue-600 rounded-md"></i>
+              <h1 class="text-[15px]  ml-3 text-xl text-gray-200 font-bold">Usuario</h1>
+              <i class="bi bi-x ml-20 cursor-pointer lg:hidden" onclick="Openbar()"></i>
+            </div>
+            <hr class="my-2 text-gray-600">
+
+            <div>
+              <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+                <i class="bi bi-house-door-fill"></i>
+                <span class="text-[15px] ml-4 text-gray-200"><a href="addAlbum.html">Add Album</a></span>
+              </div>
+              <hr class="my-4 text-gray-600">
+              <!--  -->
+              <hr class="my-4 text-gray-600">
+              <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+                <i class="bi bi-envelope-fill"></i>
+                <span class="text-[15px] ml-4 text-gray-200"><a href="index.html">Tour Dates</a></span>
+              </div>
+              <hr class="my-4 text-gray-600">
+              
+              <hr class="my-4 text-gray-600">
+              <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span class="text-[15px] ml-4 text-gray-200"><a href="login2.html">Logout</a></span>
+              </div>
+              <hr class="my-4 text-gray-600">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cuerpo mx-5">
+
+        <div class="titulo block max-w-4xl flex-wrap">
+          <h1 class="title text-blue-900 text-7xl text-center border-4 rounded-xl mx-60 my-10 p-4 border-indigo-700">Coldplay</h1>
+        </div>
+
+        <div class="parrafo block max-w-4xl flex-wrap">
+            <p class="border-2 text-justify p-4 shrink">
+              Coldplay es una banda británica de rock formada en Londres en 1997. Está integrada por Chris Martin (vocalista principal y pianista), Jonny Buckland (guitarrista), Guy Berryman (bajista), Will Champion (baterista y vocalista secundario) y Phil Harvey (director creativo).a​3​ Se conocieron en el University College London y comenzaron a tocar música juntos desde 1997 hasta 1998, inicialmente llamándose a sí mismos Big Fat Noises y luego Starfish.
+            </p>
+        </div>
+
+      </div>
+
+      <script>
+        function Openbar() {
+          document.querySelector('.sidebar').classList.toggle('left-[-300px]'); // Controla el menú
+          document.querySelector('.titulo').classList.toggle('move-right');  // Mueve el título
+          document.querySelector('.parrafo').classList.toggle('move-right'); // Mueve el párrafo
+        }
+      </script>
+
+</body>
+
+</html>
